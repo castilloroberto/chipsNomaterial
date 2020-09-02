@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalPa">
+
+
+    <TextView
+        android:id="@+id/tex_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="selecciona un paquete" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tex_center"
+
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Seleccionar"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/et_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30sp"
+        android:layout_marginBottom="50dp"
+        android:hint="Numero" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30sp"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@+id/et_numero"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_baseline_send_24" />
+
+
+</RelativeLayout>
